@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <div>
-      <h1>Olá mundo.</h1>
-    </div>
-    <script src="./main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Freela - He4rtDevs</title>
+  <link rel="stylesheet" href="./main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 align="center">Calculadora de Freela</h1>
+
+  <section class="form" id="form">
+    <form>
+      <h2>Tempo diário investido no projeto</h2>
+      <input type="number" name="horasDiarias" id="horasDiarias" placeholder="horas diárias">
+      <h2>Dias efetivos trabalhando</h2>
+      <input type="number" name="diasEfetivos" id="diasEfetivos" placeholder="dias efetivos">
+      <h2>Dias de férias por projeto</h2>
+      <input type="number" name="diasFerias" id="diasFerias" placeholder="dias de férias por projeto">
+      <h2>Valor total do projeto</h2>
+      <input type="number" name="valorProjeto" id="valorProjeto" placeholder="valor total do projeto">
+        <br>
+        <input class="button" type="button" onclick="send();" value="Calcular">
+    </form>
+    <h1>O valor da sua hora é R$<span id="result">0,00</span></h1>
+  </section>
+
+  
+
+  <script src="./main.js"></script>
+</body>
+
 </html>

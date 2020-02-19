@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color: #a063e6;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: #5c318f;
+}
+
+h2 {
+  color: #5c318f;
+}
+
+section.form {
+  text-align: center;
+  border: 3px;
+}
+
+.form input {
+  border-radius: 4px;
+  border: 1px #9163CC88 solid;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+}
+
+.form input::placeholder {
+  color: #00000044
+}
