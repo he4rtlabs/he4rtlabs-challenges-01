@@ -1,0 +1,60 @@
+h1 {
+    font-weight: bold;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;;
+    font-size: 40px;
+    text-align: center;
+    color: #9E38CD;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+}
+section {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;;
+    text-align:right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #9E38CD;
+    position: absolute;
+    left: 35%;
+    top: 25;
+}
+body {
+    font-family: Arial;
+    background-color: white;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;;
+}
+
+button {
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-size: 20px;
+    background-color: #9E38CD;
+    padding: 5px 16px;
+    color: white;
+    border-radius: white;
+}
+p {
+    
+    border-radius: 50px;
+    color: #9E38CD;
+    font-weight: bold;
+    font-size: 30px;
+}
+.container {
+    
+    text-align:center;
+    width: 500px;
+    clear: both;
+}
+  
+.container input {
+    text-align:center;
+    font-size: 25px;
+    border-radius: 50px;
+    border-color: black;
+    width: 100%;
+    clear: both;
+}

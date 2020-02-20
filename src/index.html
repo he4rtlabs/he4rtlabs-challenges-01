@@ -2,14 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./Css/main.css"/>
   </head>
+  <header>
+    <div class="text-inline" class="container">
+    <a href="https://heartdevs.com">
+    <img
+      src="./Css/9xzOXH3.png"
+      width="500px"
+      alt="He4art Logo"
+      >
+    </a>
+    </div>
+  </header>
+
   <body>
     <div>
-      <h1>Olá mundo.</h1>
+      <h1>CALCULADORA FREELA</h1>
     </div>
-    <script src="./main.js"></script>
+
+    <section>
+      <div class="container">
+        <div class="form">
+          <span class="content-label">Horas por Dia</span>
+          <input type="text"
+          id="horasDiarias">
+        </div>
+
+        <div class="form">
+          <span class="content-label">Dias por Semana</span>
+          <input type="text"
+          id="diasEfetivos">
+        </div>
+
+        <div class="form">
+          <span class="content-label">Férias por Projeto</span>
+          <input type="text"
+          id="diasFerias">
+        </div>
+
+        <div class="form">
+          <span class="content-label">Valor Total do Projeto</span>
+          <input type="text"
+          id="valorProjeto"
+          >
+        </div>
+
+        <br>
+        <br>
+        <br>
+        
+        <button value="Realizar calculo!" class="button">
+          Realizar o calculo
+        </button>
+
+        <p id='result'></p>
+    </div>
+    </section>
+    <script src="./Scripts/main.js">  
+    
+    </script>
   </body>
 </html>
