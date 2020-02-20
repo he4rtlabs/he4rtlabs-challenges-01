@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Calculadora de Freela - He4rtDevs</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">	 
-	<link href="{% static 'main.css' %}" rel="stylesheet">
-	<link href="{% static 'css/business-frontpage.css' %}" rel="stylesheet">
+	<link href="{% static 'css/main.css' %}" rel="stylesheet">
+	
 </head>
 
 <body>
@@ -15,17 +15,66 @@
 {% include 'snippets/header.html' %}
 
 <!-- start body -->
-<div class="main">
 	{% block content %}
+  <!-- Icons Grid -->
+  <section class="features-icons bg-light text-center">
+      <div class="row">
+        <div class="col">
 
-	{% endblock content %}
-</div>
+          <div class="features-icons-item mx-auto">		
+	
+            <div class="features-icons-icon d-flex ">
+				<img  class="icon-layers m-auto text-primary" src="{% static 'ampulheta.png' %}">
+			</div>
+			<h4>Tempo diário</h4>
+			<p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+			<input type="text" class="form-input" placeholder="Tempo em horas...">
+
+			<!-- <p class="lead mb-0">This theme will look great on any device, no matter the size!</p> -->
+
+          </div>
+		</div>
+		
+        <div class="col">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+				<img  class="icon-layers m-auto text-primary" src="{% static 'calendario.png' %}">
+            </div>
+			<h4>Dias da semana</h4>			
+			<p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+			<input type="text" class="form-input" placeholder="Tempo em horas...">
+          </div>
+		</div>
+		
+        <div class="col">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+				<img  class="icon-layers m-auto text-primary" src="{% static 'ferias.png' %}">
+            </div>
+            <h4>Férias planejadas</h4>
+			<p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+			<input type="text" class="form-input" placeholder="Tempo em horas...">
+          </div>
+        </div>
+	 
+
+	  <div class="col">
+		<div class="features-icons-item mx-auto mb-0 mb-lg-3">
+		  <div class="features-icons-icon d-flex">
+			<img  class="icon-layers m-auto text-primary" src="{% static 'valor.png' %}">
+		  </div>
+		  <h4>Valor total</h4>
+		  <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+		  <input type="text" class="form-input" placeholder="Tempo em horas...">
+		</div>
+	  </div>
+  
+	</div>
+    </div>
+  </section>
+
+{% endblock content %}
 <!-- End Body -->
-
-
 {% include 'snippets/footer.html' %}
-
 </body>
-
-
 </html>

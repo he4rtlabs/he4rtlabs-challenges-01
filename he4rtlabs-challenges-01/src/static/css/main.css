@@ -1,24 +1,127 @@
-.main{
+body {
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	min-height: 100vh;
 	height: 100%;
 }
-
-.bg-primary {
-	background-color: #8743cc;
-}
-
-@media (min-width: 768px) {
-	html {
-	  font-size: 16px;
+  h1,
+  h2,
+  h3,
+  h5,
+  h6 {
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+  }
+  h4 {
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	text-align: center;
+  }
+  
+  header.masthead {
+	position: relative;
+	background-color: #c5b0d1;
+	background-size: cover;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+  }
+  
+  header.masthead .overlay {
+	position: absolute;
+	background-color: #c5b0d1;
+	height: 50%;
+	width: 50%;
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+  }
+  
+  header.masthead h1 {
+	font-size: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+	header.masthead {
+	  padding-top: 4rem;
+	  padding-bottom: 4rem;
+	}
+	header.masthead h1 {
+	  font-size: 3rem;
 	}
   }
-
-  .pricing-header {
-	max-width: 700px;
+  
+  .showcase .showcase-text {
+	padding: 3rem;
   }
-
-  .card-deck .card {
-	min-width: 220px;
+  
+  .showcase .showcase-img {
+	min-height: 30rem;
+	background-size: cover;
   }
+  
+  @media (min-width: 768px) {
+	.showcase .showcase-text {
+	  padding: 7rem;
+	}
+  }
+  
+  .features-icons {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+  }
+  
+  .features-icons .features-icons-item {
+	max-width: 20rem;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon {
+	height: 7rem;
+  }
+  
+  .features-icons .features-icons-item .features-icons-icon i {
+	font-size: 4.5rem;
+  }
+  
+  .features-icons .features-icons-item:hover .features-icons-icon i {
+	font-size: 5rem;
+  }
+  
+  .testimonials {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+  }
+  
+  .testimonials .testimonial-item {
+	max-width: 18rem;
+  }
+  
+  .testimonials .testimonial-item img {
+	max-width: 12rem;
+	box-shadow: 0px 5px 5px 0px #adb5bd;
+  }
+    
+.image{
+	background-size: cover;
 
- 
+}
+
+
+.form{
+    padding: 50px;
+    width: 50em;
+    height: 36em;
+    background-color: #f9f8fc;
+    text-align: center;
+}
+
+.form-input{
+    margin-top: 20px;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #9164cd !important;
+}
+	
+  footer.footer {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+  }
