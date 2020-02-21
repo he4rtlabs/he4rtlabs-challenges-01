@@ -1,0 +1,139 @@
+#container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.main-header{
+	background-color: rgb(126, 192, 137);
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+h1, legend, label{
+	text-align: center;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+
+h1{
+	font-weight: 500;
+	font-size: 48px;
+	margin: 0;
+	padding: 10px;
+}
+
+main{
+	width: 100%;
+	background-color: rgb(159, 224, 167);
+	position: relative;
+	top: 0;
+	box-sizing: border-box;
+}
+
+.content{
+	width: 100%;
+	padding: 50px 0;
+}
+
+.content form{
+	width: 90%;
+	height: 370px;
+	margin: auto;
+}
+
+.content form fieldset{
+	border: none;
+	margin: 0;
+	padding: 10px;
+}
+
+.content form legend{
+	font-weight: 400;
+	font-size: 20px;
+	margin: 0 auto 50px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.card-form{
+	width: 20%;
+	float: left;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px rgb(11, 71, 11);
+	padding: 10px;
+	box-sizing: border-box;
+	margin: auto;
+	background-color: rgb(126, 192, 137);
+}
+
+.card-form:hover{
+	background-color: rgb(86, 192, 104);
+}
+
+.c1, .c2, .c3{
+	margin-right: 6%;
+}
+
+.card-form label{
+	display: block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-bottom: 10px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+.label-description{
+	height: 0;
+	overflow: hidden;
+}
+
+.label-description p{
+	margin: 0;
+	color: white;
+	font-size: 12px;
+	display: block;
+	margin: auto;
+	width: 200px;
+}
+
+.card-form:hover .label-description{
+	padding: 10px 0 50px;
+	transition: padding 1s ease-in-out .5s;
+}
+
+
+.card-form input{
+	margin: auto;
+	width: 70%;
+	display: block;
+	border-radius: 7px;
+	border: solid 1px black;
+	padding: 5px;
+}
+
+footer{
+	background-color: rgb(162, 231, 170);
+	padding: 20px;
+	text-align: center;
+}
+
+footer a, p{
+	color:rgb(92, 86, 86);
+	text-decoration: none;
+	font-size: 14px;
+}

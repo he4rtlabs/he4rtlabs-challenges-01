@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <div>
-      <h1>Olá mundo.</h1>
-    </div>
-    <script src="./main.js"></script>
-  </body>
+	<head>
+		<title>Calculadora de Freelas - He4rtDevs</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Douglas Santos">
+		<meta name="description" content="Desafio da He4rtlabs para treinar conhecimentos em HTML, CSS e Javascript">
+		<meta name="keywords" content="html, css, javascript, challenge, he4rtlabs, dev">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div id="container">
+			<header class="main-header">
+				<div class="title">
+					<h1>Calculadora de Freelas</h1>
+				</div>
+			</header>
+			<main>
+				<section class="content">
+					<form action="#" method="GET">
+						<fieldset>
+							<legend>Calcule qual é o valor da sua hora em um freelance</legend>
+							<div class="card-form c1">
+								<label for="daily-time">Tempo diário investido no projeto</label>
+								<div class="label-description">
+									<p>Tempo que você gasta por dia no projeto</p>
+								</div>
+								<input type="text" id="daily-time" name="daily-time">
+							</div>
+							<div class="card-form c2">
+								<label for="days-working">Dias efetivos trabalhando</label>
+								<div class="label-description">
+									<p>Tempo que você gasta por dia no projeto</p>
+								</div>
+								<input type="text" id="days-working" name="days-working">
+							</div>
+							<div class="card-form c3">
+								<label for="days-vacation">Dias de férias por projeto</label>
+								<div class="label-description">
+									<p>Tempo que você gasta por dia no projeto</p>
+								</div>
+								<input type="text" id="days-vacation" name="days-vacation">
+							</div>
+							<div class="card-form">
+								<label for="project-value">Valor total do projeto</label>
+								<div class="label-description">
+									<p>Tempo que você gasta por dia no projeto</p>
+								</div>
+								<input type="text" id="project-value" name="project-value">
+							</div>
+						</fieldset>
+					</form>
+					
+				</section>	
+			</main>
+			<footer>
+				<p class="text-footer">Desafio proposto por <a href="https://heartdevs.com/" target="_blank">He4rt Developers</a></p>
+			</footer>
+		</div>
+	</body>
 </html>
