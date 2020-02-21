@@ -14,67 +14,83 @@
 
 {% include 'snippets/header.html' %}
 
-<!-- start body -->
-	{% block content %}
-  <!-- Icons Grid -->
-  <section class="features-icons bg-light text-center">
-      <div class="row">
-        <div class="col">
 
-          <div class="features-icons-item mx-auto">		
-	
-            <div class="features-icons-icon d-flex ">
-				<img  class="icon-layers m-auto text-primary" src="{% static 'ampulheta.png' %}">
+{% block content %}
+	<!-- {% if valor_horas == 0 %} -->
+	{% load static %}
+	<form method="post" name="testForm"> {% csrf_token %}
+		<div class="container">
+		  <section class="features-icons  text-center">
+			  <div class="row">
+				<div class="col">
+				  <div class="features-icons-item mx-auto">		
+					<div class="features-icons-icon d-flex ">
+						<img  class="icon-layers m-auto text-primary" src="{% static 'ampulheta.png' %}">
+					</div>
+					<h4>Tempo diário</h4>
+					<p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+					<input type="number" name="dailytime" id="dailyTime" class="form-input" placeholder="Tempo em horas..." >
+				  </div>
+				</div>
+				
+				<div class="col">
+				  <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+					<div class="features-icons-icon d-flex">
+						<img  class="icon-layers m-auto text-primary" src="{% static 'calendario.png' %}">
+					</div>
+					<h4>Dias da semana</h4>			
+					<p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+					<input type="number" name="weekdays" id="weekDays"  class="form-input" placeholder="Tempo em horas..." >
+				  </div>
+				</div>
+			</div><!--  endrow -->
+			<div class="row">
+				<div class="col">
+				  <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+					<div class="features-icons-icon d-flex">
+						<img  class="icon-layers m-auto text-primary" src="{% static 'ferias.png' %}">
+					</div>
+					<h4>Férias planejadas</h4>
+					<p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+					<input type="number" name="vacationdays" id="vacationDays" class="form-input" placeholder="Tempo em horas...">
+				  </div>
+				</div>
+			 
+		
+			  <div class="col">
+				<div class="features-icons-item mx-auto mb-0 mb-lg-3">
+				  <div class="features-icons-icon d-flex">
+					<img  class="icon-layers m-auto text-primary" src="{% static 'valor.png' %}">
+				  </div>
+				  <h4>Valor total</h4>
+				  <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+				  <input type="number" name="totalprice" id="totalPrice"  class="form-input" placeholder="Tempo em horas...">
+				</div>
+			  </div>
 			</div>
-			<h4>Tempo diário</h4>
-			<p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
-			<input type="text" class="form-input" placeholder="Tempo em horas...">
-
-			<!-- <p class="lead mb-0">This theme will look great on any device, no matter the size!</p> -->
-
-          </div>
-		</div>
+		  </section>
 		
-        <div class="col">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-				<img  class="icon-layers m-auto text-primary" src="{% static 'calendario.png' %}">
-            </div>
-			<h4>Dias da semana</h4>			
-			<p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
-			<input type="text" class="form-input" placeholder="Tempo em horas...">
-          </div>
+			<div class="row">
+				<div class="col text-center">
+					<button type="submit" class="button"> Calcular </button>
+				</div>
+			</div>
 		</div>
-		
-        <div class="col">
-          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-				<img  class="icon-layers m-auto text-primary" src="{% static 'ferias.png' %}">
-            </div>
-            <h4>Férias planejadas</h4>
-			<p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
-			<input type="text" class="form-input" placeholder="Tempo em horas...">
-          </div>
-        </div>
-	 
+	</form>
+			
 
-	  <div class="col">
-		<div class="features-icons-item mx-auto mb-0 mb-lg-3">
-		  <div class="features-icons-icon d-flex">
-			<img  class="icon-layers m-auto text-primary" src="{% static 'valor.png' %}">
-		  </div>
-		  <h4>Valor total</h4>
-		  <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
-		  <input type="text" class="form-input" placeholder="Tempo em horas...">
-		</div>
-	  </div>
-  
-	</div>
-    </div>
-  </section>
 
-{% endblock content %}
-<!-- End Body -->
+	<!-- {% else %} -->
+	
+		<!-- {% include 'snippets/result.html' %} -->
+
+	<!-- {% endif %} -->
+{% endblock content %} 
+
+
+<footer class="footer">
+
 {% include 'snippets/footer.html' %}
+</footer>
 </body>
 </html>
