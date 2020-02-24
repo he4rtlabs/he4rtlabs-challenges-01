@@ -9,20 +9,21 @@
 }
 
 .main-header{
-	background-color: rgb(126, 192, 137);
-	position: relative;
+	background-color: rgb(103, 221, 122);
+	position: fixed;
 	top: 0;
-	left: 0;
 	width: 100%;
 	box-sizing: border-box;
 	margin: 0;
+	height: 100%;
+	width: 45%;
 }
 
-h1, legend, label{
+h1, h2, legend, label{
 	text-align: center;
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
-	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+	text-shadow: 1px 1px 3px rgb(8, 109, 16);
 }
 
 
@@ -31,25 +32,50 @@ h1{
 	font-size: 48px;
 	margin: 0;
 	padding: 10px;
+	position: relative;
+	top: 100px;
 }
 
-main{
-	width: 100%;
-	background-color: rgb(159, 224, 167);
+h2{
 	position: relative;
-	top: 0;
+	top: 150px;	
+	display: block;
+	width: 80%;
+	margin: auto;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.heart{
+	float: left;
+	width: 100px;
+	margin: 0;
+	
 	box-sizing: border-box;
 }
 
+.heart p{
+	display: block;
+}
+
+main{
+	width: 55%;
+	background-color: rgb(159, 224, 167);
+	position: relative;
+	top: 0;
+	height: 1000px;
+	box-sizing: border-box;
+	float: right;
+	padding: 0;
+}
+
 .content{
-	width: 100%;
-	padding: 50px 0;
+	padding: 20px 0;
 }
 
 .content form{
-	width: 90%;
-	height: 370px;
-	margin: auto;
+	width: 100%;
+	padding: 0;
 }
 
 .content form fieldset{
@@ -59,30 +85,38 @@ main{
 }
 
 .content form legend{
-	font-weight: 400;
-	font-size: 20px;
-	margin: 0 auto 50px;
+	font-weight: 600;
+	font-size: 25px;
+	margin: 0 auto 25px;
 	color: white;
 	letter-spacing: 1px;
 }
 
+.group{
+	width: 100%;
+	padding-left: 5%;
+	box-sizing: border-box;
+	margin-bottom: 235px;
+}
+
 .card-form{
-	width: 20%;
+	width: 40%;
 	float: left;
 	border-radius: 4px;
-	box-shadow: 1px 1px 3px rgb(11, 71, 11);
+	box-shadow: 1px 1px 4px rgb(11, 71, 11);
 	padding: 10px;
 	box-sizing: border-box;
 	margin: auto;
-	background-color: rgb(126, 192, 137);
+	transition: background-color .5s ease-in-out .1s;
+	background-color: transparent;
 }
 
 .card-form:hover{
-	background-color: rgb(86, 192, 104);
+	background-color: rgb(103, 221, 122);
 }
 
-.c1, .c2, .c3{
-	margin-right: 6%;
+.c1, .c3{
+	margin-right: 15%;
 }
 
 .card-form label{
@@ -90,46 +124,49 @@ main{
 	font-size: 14px;
 	letter-spacing: 1px;
 	text-align: center;
-	margin-bottom: 10px;
 	color: white;
 	text-transform: uppercase;
 	font-weight: bold;
-
+	width: 90%;
+	margin: 0 auto 10px;
 }
 
 .label-description{
-	height: 0;
+	max-height: 0;
 	overflow: hidden;
+	transition: max-height 1s cubic-bezier(.77,-0.25,.18,1.42) .5s;
 }
 
 .label-description p{
 	margin: 0;
 	color: white;
-	font-size: 12px;
+	font-size: 14px;
 	display: block;
-	margin: auto;
-	width: 200px;
+	margin: 0 auto 5px;
+	width: 100%;
 }
 
 .card-form:hover .label-description{
-	padding: 10px 0 50px;
-	transition: padding 1s ease-in-out .5s;
+	max-height: 300px;
 }
-
 
 .card-form input{
 	margin: auto;
 	width: 70%;
 	display: block;
 	border-radius: 7px;
-	border: solid 1px black;
+	box-shadow: 1px 1px 3px rgb(6, 90, 6);
+	border: none;
 	padding: 5px;
 }
 
 footer{
-	background-color: rgb(162, 231, 170);
-	padding: 20px;
 	text-align: center;
+	width: 45%;
+	float: left;
+	position: fixed;
+	top: 90%;
+	display: block;
 }
 
 footer a, p{

@@ -13,40 +13,45 @@
 			<header class="main-header">
 				<div class="title">
 					<h1>Calculadora de Freelas</h1>
+					<h2>Calcule qual é o valor da sua hora em um freelance</h2>
 				</div>
 			</header>
 			<main>
 				<section class="content">
 					<form action="#" method="GET">
 						<fieldset>
-							<legend>Calcule qual é o valor da sua hora em um freelance</legend>
-							<div class="card-form c1">
-								<label for="daily-time">Tempo diário investido no projeto</label>
-								<div class="label-description">
-									<p>Tempo que você gasta por dia no projeto</p>
+							<legend>O que levar em consideração	</legend>
+							<div class="group">
+								<div class="card-form c1">
+									<label for="daily-time">Tempo diário investido no projeto</label>
+									<div class="label-description">
+										<p>Tempo demandado das horas em off que você possui.  As horas em off seriam depois do trabalho, escola ou aquele tempinho vago no final do dia que você usa pra relaxar e descontrair.</p>
+									</div>
+									<input type="text" id="daily-time" name="daily-time">
 								</div>
-								<input type="text" id="daily-time" name="daily-time">
+								<div class="card-form c2">
+									<label for="days-working">Dias efetivos trabalhando</label>
+									<div class="label-description">
+										<p>Nem sempre você poderá se dedicar a um projeto em todos os dias da sua semana. Por isso, é importante saber a quantidade correta de dias trabalhados no projeto para realizar o cálculo.</p>
+									</div>
+									<input type="text" id="days-working" name="days-working">
+								</div>
 							</div>
-							<div class="card-form c2">
-								<label for="days-working">Dias efetivos trabalhando</label>
-								<div class="label-description">
-									<p>Tempo que você gasta por dia no projeto</p>
+							<div class="group">
+								<div class="card-form c3">
+									<label for="days-vacation">Dias de férias por projeto</label>
+									<div class="label-description">
+										<p>Assim como em qualquer modalidade de trabalho, nos freelas é necessário calcular os encargos referentes às férias. Isso é feito com base nos dias de férias que você pretende ter durante um projeto.</p>
+									</div>
+									<input type="text" id="days-vacation" name="days-vacation">
 								</div>
-								<input type="text" id="days-working" name="days-working">
-							</div>
-							<div class="card-form c3">
-								<label for="days-vacation">Dias de férias por projeto</label>
-								<div class="label-description">
-									<p>Tempo que você gasta por dia no projeto</p>
+								<div class="card-form c4">
+									<label for="project-value">Valor total do projeto</label>
+									<div class="label-description">
+										<p>Essa é a principal variável para calcular o valor da sua hora. Com base no valor total que você pretende receber pelo projeto, serão feitos todos os outros cálculos.</p>
+									</div>
+									<input type="text" id="project-value" name="project-value">
 								</div>
-								<input type="text" id="days-vacation" name="days-vacation">
-							</div>
-							<div class="card-form">
-								<label for="project-value">Valor total do projeto</label>
-								<div class="label-description">
-									<p>Tempo que você gasta por dia no projeto</p>
-								</div>
-								<input type="text" id="project-value" name="project-value">
 							</div>
 						</fieldset>
 					</form>
