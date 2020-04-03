@@ -1,0 +1,201 @@
+html{
+	font-size: 100%;
+}
+
+#container{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+}
+
+.main-header{
+	display: flex;
+	position: fixed;
+	box-sizing: border-box;
+	margin: 0;
+	height: 100%;
+	width: 40%;
+	background-color: rgb(54, 136, 54);
+}
+
+
+h1, h2, legend, label{
+	font-family: 'Signika';
+	text-align: center;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px 1px rgb(0, 53, 0);
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+h1{
+	display: flex;
+	flex-basis: 11.5em;
+	font-size: 3rem;
+	padding: .625rem;
+	position: relative;
+	top: 8.25rem;
+}
+
+h2{
+	position: relative;
+	top: 9.375rem;	
+	display: block;
+	width: 80%;
+	margin: auto;
+	font-size: 1.5625rem;
+	font-weight: 400;
+}
+
+
+main{
+	position: relative;
+	width: 60%;
+	left: 40%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.content{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 1.25rem 0 0;
+}
+
+.content form fieldset{
+	border: none;
+}
+
+.content form legend{
+	font-weight: 600;
+	font-size: 1.5625rem;
+	margin: 0 auto 1.5625rem;
+	letter-spacing: 1px;
+}
+
+.cards{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.card-form{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 11.5em;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 4px;
+	box-shadow: 2px 2px 3px rgb(54, 136, 54), -2px -2px 3px rgb(54, 136, 54);
+	margin-bottom: 1.5em;
+	box-sizing: border-box;
+	padding: .5em .2em;
+}
+
+.card-form label{
+	font-size: 1.125rem;
+	letter-spacing: .0625rem;
+	text-transform: uppercase;
+}
+
+
+.label-description p{
+	font-size: 1rem;
+	color: rgb(50, 102, 57);
+	text-align: center;
+}
+
+.card-form input{
+	background-color: white;
+	width: 70%;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: solid 2px rgb(128, 180, 128);
+	transition: border .3s ease-in-out .5s;
+	font-size: 1.5625rem;
+	text-align: center;
+	color: rgb(39, 163, 39);
+}
+
+/*não exibir as setas do input type number*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+  }
+
+.card-form input:invalid{
+	color: red;
+	border-bottom: solid 2px red;
+}
+
+.card-form input:not(:invalid):focus{
+	border-bottom: solid 2px rgb(21, 238, 21);
+}
+
+.card-form input[placeholder]{
+	opacity: .6;
+}
+
+.buttons{
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	justify-content: space-around;
+	margin-bottom: 1.5em;
+}
+
+.button-calc{
+	width: 30%;
+	height: 3.125rem;	
+	background-color: white;
+	border-radius: .625rem;
+	border: solid 3px rgba(21, 238, 21, 0.384);
+	transition: border .6s ease-in-out .1s;
+	font-size: 1.125rem;
+	font-weight: bolder;
+	color: rgb(54, 136, 54);
+	text-transform: uppercase;
+	box-sizing: border-box;
+	border: solid 3px rgb(54, 136, 54);
+}
+
+#resultado{
+	display: flex;
+	flex-basis: 50%;
+	max-height: 0;
+	text-align: center;
+	transition: all .9s cubic-bezier(.14,-0.45,.89,1.35) .4s;
+	font-size: 1.875rem;
+	border-radius: .2em;
+	box-sizing: border-box;
+	color: transparent;
+}
+
+footer{
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 40%;
+	margin: 0;
+}
+
+footer a, p{
+	color: white;
+	text-decoration: none;
+	font-size: .875rem;
+}
+
