@@ -1,15 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <div>
-      <h1>Olá mundo.</h1>
-    </div>
-    <script src="./main.js"></script>
-  </body>
-</html>
+	<head>
+		<title>Calculadora de Freelas - He4rtDevs</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Douglas Santos">
+		<meta name="description" content="Desafio da He4rtlabs para treinar conhecimentos em HTML, CSS e Javascript">
+		<meta name="keywords" content="html, css, javascript, challenge, he4rtlabs, dev">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Signika&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<style>
+			@media screen and (max-width: 400px){
+				#container{
+					width: 100%;
+				}
+
+				.content{
+					width: 100%;
+					box-sizing: border-box;
+				}
+
+				.main-header{
+					width: 100%;	
+					position: relative;
+					top: 0;
+				}
+
+
+				.title{
+					position: relative;
+					top: 0;
+					width: 100%;
+					padding: 1.25rem 0;
+				}
+
+
+				h1, h2{
+					position: relative;
+					top: 0;
+				}
+
+				h1{
+					font-size: 2rem;
+				}
+
+				h2{
+					font-size: 1.3rem;
+				}
+
+				main{
+					width: 100%;
+					position: relative;
+					left: 0;
+					top: 0;
+				}
+
+				.card-form{
+					width: 80%;
+					margin: 0 10% .9rem;
+				}
+				
+				.buttons{
+					margin: 2rem 0;
+				}
+
+				.button-calc{
+					padding: 0;
+				}
+
+				#resultado{
+					position: relative;
+					top: 0;
+					width: 100%;
+				}
+
+				footer{
+					position: relative;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					text-align: center;
+					margin-top: 5rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<header class="main-header">
+				<div class="title">
+					<h1>Calculadora de Freelas</h1>
+					<h2>Calcule qual é o valor da sua hora em um freelance</h2>
+				</div>
+			</header>
+			<main>
+				<section class="content">
+					<form action="" id="form" method="GET">
+						<fieldset>
+							<legend>O que levar em consideração	</legend>
+								<div class="cards">
+									<div class="card-form">
+										<label for="daily-time">Tempo diário investido no projeto</label>
+										<div class="label-description">
+											<p>Tempo demandado das horas em off que você possui.  As horas em off seriam depois do trabalho, escola ou aquele tempinho vago no final do dia que você usa pra relaxar e descontrair.</p>
+										</div>
+										<input placeholder="0" type="number" id="daily-time" name="daily-time" step="any" >
+									</div>
+									<div class="card-form">
+										<label for="days-working">Dias dedicados ao projeto</label>
+										<div class="label-description">
+											<p>Nem sempre você poderá se dedicar a um projeto em todos os dias da sua semana. Por isso, é importante saber a quantidade correta de dias trabalhados no projeto para realizar o cálculo.</p>
+										</div>
+										<input placeholder="0" type="number" id="days-working" name="days-working" step="any" >
+									</div>
+									<div class="card-form">
+										<label for="days-vacation">Dias de férias por projeto</label>
+										<div class="label-description">
+											<p>Assim como em qualquer modalidade de trabalho, nos freelas é necessário calcular os encargos referentes às férias. Use como base o número de dias de férias no período do projeto.</p>
+										</div>
+										<input placeholder="0" type="number" id="days-vacation" name="days-vacation" step="any" >
+									</div>
+									<div class="card-form">
+										<label for="project-value">Valor total a receber pelo projeto</label>
+										<div class="label-description">
+											<p>Essa é a principal variável para calcular o valor da sua hora em um projeto. Com base no valor total que você pretende receber pelo projeto, serão feitos todos os outros cálculos.</p>
+										</div>
+										<input placeholder="0" type="number" min="0" id="project-value" name="project-value" step="any" >	
+									</div>
+								</div>
+							</fieldset>
+							<div class="buttons">
+								<input type="reset" class="button-calc" value="Limpar" onclick="limparResultado()">
+								<input type="submit" class="button-calc" onclick="calculaHoras()" value="Calcular">
+							</div>
+					</form>
+					<div id="resultado"></div>
+				</section>	
+			</main>
+			<footer>
+				<p>Desafio proposto por <a href="https://heartdevs.com/" title="Visite o site da He4rt Developers" target="_blank">He4rt Developers</a></p>
+			</footer>
+		</div>
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+	</html>
