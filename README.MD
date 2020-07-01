@@ -45,7 +45,7 @@ O que queremos ensinar é que há algo muito além do software dentro desses mei
   //
   // By: danielhe4rt
 
-  valorHora = (valorProjeto / (diasEfetivos * 4 * horasDiarias) ) + ( ( diasFerias * diasEfetivos * horasDiarias ) )
+  valorHora = (valorProjeto / ((diasEfetivos + diasFerias) * horasDiarias))
   ```
 
 Cuidados a se tomar:
