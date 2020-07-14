@@ -14,6 +14,7 @@ body {
 body {
   background: #202932;
   color: #889bb0;
+  font-family: 'Roboto', sans-serif;
 }
 
 button {
@@ -48,6 +49,7 @@ main .hero .hero-title {
   font-size: 32px;
   font-weight: 900;
   text-align: center;
+  text-transform: uppercase;
 }
 
 main .calculator {
@@ -72,7 +74,6 @@ main .calculator .container .form .input + .input {
 }
 
 main .calculator .container .form .input .input-label {
-  font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-size: 14px;
   font-weight: 900;
@@ -111,7 +112,6 @@ main .calculator .container .form .result .result-value {
 
 main .calculator .container .form .result .result-text {
   display: block;
-  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: rgba(135, 67, 204, 0.65);
@@ -123,14 +123,18 @@ main .calculator .container .form .buttons .button-calculate {
   width: 120px;
   height: 36px;
   color: #889bb0;
-  font: italic 900 16px 'Roboto', sans-serif;
+  font-style: italic;
+  font-style: 16px;
+  font-weight: 900;
   text-transform: uppercase;
   margin-right: 16px;
 }
 
 main .calculator .container .form .buttons .button-reset {
   background: transparent;
-  font: italic 900 16px 'Roboto', sans-serif;
+  font-style: italic;
+  font-style: 16px;
+  font-weight: 900;
   color: #889bb0;
   text-transform: uppercase;
   border-bottom: 3px solid #8743CC;
