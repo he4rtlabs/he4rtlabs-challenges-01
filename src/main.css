@@ -53,7 +53,7 @@ main .hero .hero-title {
 }
 
 main .calculator {
-  padding: 32px 0 80px;
+  padding: 32px 0;
 }
 
 main .calculator .container .form {
