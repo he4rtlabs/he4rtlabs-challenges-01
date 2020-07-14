@@ -142,3 +142,30 @@ main .calculator .container .form .buttons .button:hover{
   transform: scale(1.1);
   box-shadow: 0 0 30px -9px rgba(0, 0, 0, 0.5);
 }
+
+.site-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-footer .container .social {
+  padding: 24px 0;
+  max-width: 200px;
+}
+
+.site-footer .container .social .social-link {
+  color: #8743CC;
+  font-size: 32px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.site-footer .container .social .social-link + .social-link {
+  margin-left: 16px;
+}
+
+.site-footer .container .social .social-link i:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.5);
+}
