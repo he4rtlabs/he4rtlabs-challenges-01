@@ -38,3 +38,14 @@ button {
 .site-header .container .logo img {
   width: 220px;
 }
+
+main .hero {
+  padding: 24px 0;
+}
+
+main .hero .hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+}
