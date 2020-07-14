@@ -25,3 +25,16 @@ button {
   margin: 0 auto;
   padding: 0 16px;
 }
+
+.site-header {
+  padding: 10px 0;
+}
+
+.site-header .container .logo {
+  display: block;
+  width: 220px;
+}
+
+.site-header .container .logo img {
+  width: 220px;
+}
