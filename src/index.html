@@ -19,6 +19,40 @@
       <section class="hero">
         <h1 class="hero-title">Calculadora Freelancer</h1>
       </section>
+
+      <section class="calculator">
+        <form class="form">
+          <div class="input">
+            <label for="hours-daily" class="input-label">Tempo diário investido no projeto</label>
+            <input type="text" id="hours-daily" class="input-item">
+          </div>
+
+          <div class="input">
+            <label for="days-worked" class="input-label">Dias efetivos trabalhado</label>
+            <input type="text" id="days-worked" class="input-item">
+          </div>
+
+          <div class="input">
+            <label for="vacation-days" class="input-label">Dias de férias por projeto</label>
+            <input type="text" id="vacation-days" class="input-item">
+          </div>
+
+          <div class="input">
+            <label for="project-value" class="input-label">Valor total do projeto</label>
+            <input type="text" id="project-value" class="input-item">
+          </div>
+
+          <div class="result">
+            <span class="result-value">R$ 0,00</span>
+            <span class="result-text">O seu novo valor/hora.</span>
+          </div>
+
+          <div class="buttons">
+            <button type="submit" class="button-calculate">Calcular</button>
+            <button type="submit" class="button-reset">Limpar</button>
+          </div>
+        </form>
+      </section>
     </main>
     <script src="./main.js"></script>
   </body>
