@@ -49,3 +49,98 @@ main .hero .hero-title {
   font-weight: 900;
   text-align: center;
 }
+
+main .calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0 80px;
+}
+
+main .calculator .form {
+  max-width: 320px;
+  width: 100%;
+}
+
+main .calculator .form .input {
+  display: flex;
+  flex-direction: column;
+}
+
+main .calculator .form .input + .input {
+  margin-top: 24px;
+}
+
+main .calculator .form .input .input-label {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+main .calculator .form .input .input-item {
+  background: rgba(135, 67, 204, 0.15);
+  height: 48px;
+  border-bottom: 3px solid #8743CC;
+  color: #889bb0;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 16px;
+  transition: all 0.3s ease ;
+}
+
+main .calculator .form .input .input-item:focus,
+main .calculator .form .input .input-item:hover {
+  background: rgba(135, 67, 204, 0.3);
+  box-shadow: 0 0 30px -9px rgba(0, 0, 0, 0.5);
+}
+
+main .calculator .form .result {
+  margin: 24px 0;
+}
+
+main .calculator .form .result .result-value {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: #8743CC;
+}
+
+main .calculator .form .result .result-text {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(135, 67, 204, 0.65);
+}
+
+main .calculator .form .buttons .button-calculate {
+  background: rgba(135, 67, 204, 0.3);
+  border-radius: 16px;
+  width: 120px;
+  height: 36px;
+  color: #889bb0;
+  font: italic 900 16px 'Roboto', sans-serif;
+  text-transform: uppercase;
+  margin-right: 16px;
+}
+
+main .calculator .form .buttons .button-reset {
+  background: transparent;
+  font: italic 900 16px 'Roboto', sans-serif;
+  color: #889bb0;
+  text-transform: uppercase;
+  border-bottom: 3px solid #8743CC;
+  padding: 0 8px 4px;
+}
+
+main .calculator .form .buttons .button-calculate:focus,
+main .calculator .form .buttons .button-calculate:hover,
+main .calculator .form .buttons .button-reset:focus,
+main .calculator .form .buttons .button-reset:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px -9px rgba(0, 0, 0, 0.5);
+}
