@@ -53,15 +53,13 @@ main .hero .hero-title {
 }
 
 main .calculator {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 32px 0 80px;
 }
 
 main .calculator .container .form {
-  max-width: 320px;
+  max-width: 400px;
   width: 100%;
+  margin: 0 auto;
 }
 
 main .calculator .container .form .input {
