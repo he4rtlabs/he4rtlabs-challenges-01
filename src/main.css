@@ -115,34 +115,30 @@ main .calculator .container .form .result .result-text {
   color: rgba(135, 67, 204, 0.65);
 }
 
+main .calculator .container .form .buttons .button {
+  color: #889bb0;
+  font-style: italic;
+  font-style: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 main .calculator .container .form .buttons .button-calculate {
   background: rgba(135, 67, 204, 0.3);
   border-radius: 16px;
   width: 120px;
   height: 36px;
-  color: #889bb0;
-  font-style: italic;
-  font-style: 16px;
-  font-weight: 900;
-  text-transform: uppercase;
   margin-right: 16px;
 }
 
 main .calculator .container .form .buttons .button-reset {
   background: transparent;
-  font-style: italic;
-  font-style: 16px;
-  font-weight: 900;
-  color: #889bb0;
-  text-transform: uppercase;
   border-bottom: 3px solid #8743CC;
   padding: 0 8px 4px;
 }
 
-main .calculator .container .form .buttons .button-calculate:focus,
-main .calculator .container .form .buttons .button-calculate:hover,
-main .calculator .container .form .buttons .button-reset:focus,
-main .calculator .container .form .buttons .button-reset:hover {
+main .calculator .container .form .buttons .button:focus,
+main .calculator .container .form .buttons .button:hover{
   transform: scale(1.1);
   box-shadow: 0 0 30px -9px rgba(0, 0, 0, 0.5);
 }
