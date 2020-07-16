@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <div>
-      <h1>TESTE</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Freela - He4rtDevs</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <div class="bg-contact2">
+    <div class="container">
+      <a class="navbar-brand" href="https://heartdevs.com/">
+      <img src="img/logo-he4rt2.png" width="25%" height="35%" class="img-fluid shadow-none">
+      </a>
+      <h1 style="color: black; text-align: center; padding-top: 10px;">Calculadora de Freelance</h1>
+      <h3 style="color: black; text-align: center; padding-top: 10px;">Da comunidade para comunidade</h3>
     </div>
-    <script src="./main.js"></script>
-  </body>
+    <div class="container-contact2">
+      <img src="img/undraw_Online_page_re_lhgx.png" width="50%" height="50%" class="shadow-lg">
+      <div class="wrap-contact2 shadow-lg">
+        <form class="contact2-form validate-form">
+          <h1 style="color: black;">Quanto vale a sua hora ?</h1>
+
+          <label for="diario">Tempo diário investido no projeto</label>
+          <input type="number" id="diario" name="diario">
+
+          <label for="efetivos">Dias efetivos trabalhando</label>
+          <input type="number" id="efetivos" name="efetivos">
+
+          <label for="total">Valor total do Projeto</label>
+          <input type="number" id="total" name="total">
+
+          <label for="ferias">Dias de Férias por projeto</label>
+          <input type="number" id="ferias" name="ferias">
+        </form>
+      </div>
+    </div>
+    <footer class="page-footer font-small">
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://github.com/evangelistamt">Matheus Evangelista</a>
+        <h5>Este desafio foi desenvolvido pelo grupo He4rt Developers para uso livre da comunidade.</h5>
+      </div>
+    </footer>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
 </html>

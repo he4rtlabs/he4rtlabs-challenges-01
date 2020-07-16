@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Poppins-Regular, sans-serif;
+}
+.bg-contact2 {
+  background-color: white;
+}
+
+.container-contact2 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.wrap-contact2 {
+  width: 790px;
+  background-color: #9163cc;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 72px 55px 90px 55px;
+}
+
+input {
+  width: 100%;
+  color: #000000;
+  position: relative;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 37px;
+}
+
+label {
+  color: #000000;
+}
+
+@media (max-width: 576px) {
+  .wrap-contact2 {
+    padding: 72px 15px 90px 15px;
+  }
+}
