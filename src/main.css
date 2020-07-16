@@ -46,6 +46,10 @@ input {
 label {
   color: #000000;
 }
+button {
+  background-color: #9163cc !important;
+  color: black !important;
+}
 
 @media (max-width: 576px) {
   .wrap-contact2 {
