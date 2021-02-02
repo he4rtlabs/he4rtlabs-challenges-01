@@ -5,10 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Freela - He4rtDevs</title>
     <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div>
-      <h1>Olá mundo.</h1>
+    <header class="container">
+      <div class="grid-container">
+        <img src="./public/img/47680810.png" alt="" class="logo" />
+        <h1>He4artLabs</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-content">
+        <h1>CALCULADORA DE FREELAS</h1>
+        
+        <h3>Valor Total do seu Projeto</h3>
+        <input type="text" placeholder="Digite Aqui" name="ValorTotal" id="ValorTotal" />
+
+        <h3>Quantidade de horas Trabalhadas por dia</h3>
+        <input type="text" placeholder="Digite aqui" name="horasDia" id="horasDia" />
+
+        <h3>Dias efetivos trabalhados na semana</h3>
+        <input type="text" placeholder="Digite aqui" name="diasEfetivos" id="diasEfetivos" />
+
+        <h3>Dias de Férias pelo Projeto</h3>
+        <input type="text" placeholder="Digite aqui" name="ferias" id="diasFerias">
+
+        <input id="button" type="button" value="calcular" onclick="calcular()">
+      </div>
+    </main>
+    <section>
+      <div id="result">
+        <!-- Resultado vem aqui-->
+      </div>
+    </section>
+
+    <div class="footer">
+      <p>Thiago Lopes</p>
     </div>
     <script src="./main.js"></script>
   </body>
