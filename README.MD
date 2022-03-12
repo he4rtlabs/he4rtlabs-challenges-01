@@ -40,7 +40,7 @@ O que queremos ensinar é que há algo muito além do software dentro desses mei
 
 - Ao submeter o formulário será gerada uma nova div com o resultado da conta abaixo:
 
-  ```
+```
   // Conta para calcular valor da sua hora no projeto
   //
   // By: danielhe4rt
