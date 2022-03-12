@@ -1,0 +1,7 @@
+.field {
+  margin-top: 30px;
+}
+
+.field .control :nth-child(1) {
+  margin-right: 10px;
+}
