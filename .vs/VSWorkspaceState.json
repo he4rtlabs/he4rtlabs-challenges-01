@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Freelas",
+    "\\Freelas\\API"
   ],
   "PreviewInSolutionExplorer": false
 }
