@@ -859,5 +859,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-. \ . v s \  
+. \ . v s \ 
+ 
  
